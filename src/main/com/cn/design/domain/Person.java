@@ -8,7 +8,6 @@ public class Person{
     private String username;
     private String password;
     private String nick;
-
     public int getId() {
         return id;
     }
