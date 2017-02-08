@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="com.cn.design.domain.BorrowBookEntity" table="borrowBookEntity">
+      <id name="borrowBookEntityId" type="java.lang.Integer">
+         <generator class="native"/>
+      </id>
+      <property name="bookName" type="java.lang.String"/>
+      <property name="bookId" type="java.lang.Integer"/>
+      <property name="isBeyondLimit" type="java.lang.Integer"/>
+      <property name="cenBorrowBookNum" type="java.lang.Integer"/>
+      <property name="borrowStartDate" type="java.util.Date"/>
+      <property name="borrowBookLimit" type="java.lang.Integer"/>
+      <property name="returnEndDate" type="java.util.Date"/>
+      <!--Todo BorrowBookEntity关系映射没有完成-->
+   </class>
+</hibernate-mapping>

@@ -8,6 +8,26 @@ import java.util.List;
  */
 public class ReturnBookEntity {
 
+    private Integer returnBookEntityId;     //还书id
+
+    private String bookName;                //书名
+
+    private Integer bookId;                 //书id
+
+    private int isBeyondLimit;              //是否超期(0未超期,1超期)
+
+    private int cenBorrowBookNum;           //当前能被借阅的本书
+
+    private Date borrowStartDate;           //借书开始时间
+
+    private int borrowBookLimit;         //借书期限
+
+    private Date returnEndDate;             //还书时间
+
+    private String classificationName;      //分类
+
+    private List<User> users;               //用户,这里也是多对多关系
+
     public Integer getReturnBookEntityId() {
         return returnBookEntityId;
     }
@@ -56,11 +76,11 @@ public class ReturnBookEntity {
         this.borrowStartDate = borrowStartDate;
     }
 
-    public String getBorrowBookLimit() {
+    public int getBorrowBookLimit() {
         return borrowBookLimit;
     }
 
-    public void setBorrowBookLimit(String borrowBookLimit) {
+    public void setBorrowBookLimit(int borrowBookLimit) {
         this.borrowBookLimit = borrowBookLimit;
     }
 
@@ -88,24 +108,6 @@ public class ReturnBookEntity {
         this.users = users;
     }
 
-    private Integer returnBookEntityId;
 
-    private String bookName;
-
-    private Integer bookId;
-
-    private int isBeyondLimit;
-
-    private int cenBorrowBookNum;
-
-    private Date borrowStartDate;
-
-    private String borrowBookLimit;
-
-    private Date returnEndDate;
-
-    private String classificationName;
-
-    private List<User> users;
 
 }

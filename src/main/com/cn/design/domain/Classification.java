@@ -7,11 +7,11 @@ import java.util.List;
  */
 public class Classification {
 
-    private Integer classificationId;
+    private Integer classificationId;       //书的分类
 
-    private String classificationName;
+    private String classificationName;      //分类型
 
-    private List<Book> books;
+    private List<Book> books;               //书,这个是1对多的关系
 
     public Integer getClassificationId() {
         return classificationId;

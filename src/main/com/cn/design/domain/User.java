@@ -9,6 +9,8 @@ public class User {
 
     private Integer userId;                             //userId
 
+    private String userName;                            //用户名
+
     private String password;                            //密码
 
     private String nick;                                //昵称
@@ -31,6 +33,13 @@ public class User {
 
     private List<ReturnBookEntity> returnBookEntities;  //还书
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     public Integer getUserId() {
         return userId;

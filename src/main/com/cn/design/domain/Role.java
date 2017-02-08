@@ -7,11 +7,11 @@ import java.util.List;
  */
 public class Role {
 
-    private Integer roleId;
+    private Integer roleId;     //角色id
 
-    private int userType;
+    private int userType;       //0为普通用户,1为管理员用户
 
-    private List<User> users;
+    private List<User> users;   //用户
 
     public Integer getRoleId() {
         return roleId;

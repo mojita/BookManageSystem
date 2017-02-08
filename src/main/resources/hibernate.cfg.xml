@@ -18,5 +18,11 @@
 
 
     <mapping resource="com/cn/design/domain/User.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/Book.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/BorrowBookEntity.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/Classification.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/LibraryCard.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/ReturnBookEntity.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/Role.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="com.cn.design.domain.LibraryCard" table="libraryCard">
+      <id name="cardId" type="java.lang.Integer">
+         <generator class="native"/>
+      </id>
+      <property name="userName" type="java.lang.String"/>
+      <property name="startDate" type="java.util.Date"/>
+      <!--Todo LibraryCard关系映射没有完成userId还没有进行映射-->
+
+   </class>
+</hibernate-mapping>

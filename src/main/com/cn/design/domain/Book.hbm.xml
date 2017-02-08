@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.cn.design.domain.Book" table="book">
+        <id name="bookId" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="bookName" type="java.lang.String"/>
+        <property name="press" type="java.lang.String"/>
+        <property name="author" type="java.lang.String"/>
+        <property name="bookCount" type="java.lang.Integer"/>
+        <property name="bookNewNum" type="java.lang.Integer"/>
+        <property name="description" type="java.lang.String"/>
+        <property name="addUserName" type="java.lang.String"/>
+        <property name="imagePath" type="java.lang.String"/>
+        <property name="imageName" type="java.lang.String"/>
+        <property name="importDate" type="java.util.Date"/>
+        <!--Todo Book关系映射没有完成-->
+        
+    </class>
+
+
+</hibernate-mapping>

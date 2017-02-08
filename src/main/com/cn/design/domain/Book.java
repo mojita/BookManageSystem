@@ -7,29 +7,29 @@ import java.util.Date;
  */
 public class Book {
 
-    private Integer bookId;
+    private Integer bookId;                     //id
 
-    private String bookName;
+    private String bookName;                    //书名
 
-    private String press;
+    private String press;                       //出版社
 
-    private String author;
+    private String author;                      //作者
 
-    private int bookCount;
+    private int bookCount;                      //书的总本书
 
-    private int bookNewNum;
+    private int bookNewNum;                     //当前图书馆中的本书
 
-    private String description;
+    private String description;                 //书的描述
 
-    private String addUserName;
+    private String addUserName;                 //添加这的名字
 
-    private String imageName;
+    private String imageName;                   //图片名字
 
-    private String imagePath;
+    private String imagePath;                   //图片路径
 
-    private Date importDate;
+    private Date importDate;                    //入库时间
 
-    private Classification classification;
+    private Classification classification;      //分类
 
     public Integer getBookId() {
         return bookId;

@@ -3,5 +3,20 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
+    <class name="com.cn.design.domain.User" table="user">
+        <id name="userId" type="java.lang.Integer" length="1000">
+            <generator class="native"/>
+        </id>
+        <property name="userName" type="java.lang.String"/>
+        <property name="password" type="java.lang.String"/>
+        <property name="nick" type="java.lang.String"/>
+        <property name="emailAddress" type="java.lang.String"/>
+        <property name="homeAddress" type="java.lang.String"/>
+        <property name="phoneNum" type="java.lang.String"/>
+        <property name="imageName" type="java.lang.String"/>
+        <property name="imagePath" type="java.lang.String"/>
 
+        <!--TODO 后面的关系映射还没有完成-->
+
+     </class>
 </hibernate-mapping>

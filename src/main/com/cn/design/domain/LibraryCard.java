@@ -7,13 +7,13 @@ import java.util.Date;
  */
 public class LibraryCard {
 
-    private Integer cardId;
+    private Integer cardId;     //借书证的Id
 
-    private String userName;
+    private String userName;    //用户姓名
 
-    private Date startDate;
+    private Date startDate;     //借书证开始时间
 
-    private Integer userId;
+    private Integer userId;     //用户id
 
     public Integer getCardId() {
         return cardId;

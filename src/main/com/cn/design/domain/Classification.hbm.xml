@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="com.cn.design.domain.Classification" table="classification">
+      <id name="classificationId" type="java.lang.Integer">
+         <generator class="native"/>
+      </id>
+      <property name="classificationName" type="java.lang.String"/>
+      <!--Todo Classification关系映射没有完成-->
+
+   </class>
+
+</hibernate-mapping>
