@@ -17,6 +17,6 @@
     <property name="format_sql">true</property>
 
 
-    <mapping resource="com/cn/design/domain/Person.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/User.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
