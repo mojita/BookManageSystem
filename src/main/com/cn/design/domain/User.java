@@ -1,6 +1,6 @@
 package com.cn.design.domain;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by lijunhong on 17/1/24.
@@ -29,9 +29,9 @@ public class User {
 
     private Role role;                                  //角色
 
-    private List<BorrowBookEntity> borrowBookEntities;  //借书
+    private Set<BorrowBookEntity> borrowBookEntities;  //借书
 
-    private List<ReturnBookEntity> returnBookEntities;  //还书
+    private Set<ReturnBookEntity> returnBookEntities;  //还书
 
     public String getUserName() {
         return userName;
@@ -121,19 +121,19 @@ public class User {
         this.role = role;
     }
 
-    public List<BorrowBookEntity> getBorrowBookEntities() {
+    public Set<BorrowBookEntity> getBorrowBookEntities() {
         return borrowBookEntities;
     }
 
-    public void setBorrowBookEntities(List<BorrowBookEntity> borrowBookEntities) {
+    public void setBorrowBookEntities(Set<BorrowBookEntity> borrowBookEntities) {
         this.borrowBookEntities = borrowBookEntities;
     }
 
-    public List<ReturnBookEntity> getReturnBookEntities() {
+    public Set<ReturnBookEntity> getReturnBookEntities() {
         return returnBookEntities;
     }
 
-    public void setReturnBookEntities(List<ReturnBookEntity> returnBookEntities) {
+    public void setReturnBookEntities(Set<ReturnBookEntity> returnBookEntities) {
         this.returnBookEntities = returnBookEntities;
     }
 }

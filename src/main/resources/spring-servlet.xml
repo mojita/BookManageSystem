@@ -22,6 +22,11 @@
     <!--完成请求和注解映射-->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
 
+
+    <bean class="com.cn.design.springtest.FunctionService">
+
+    </bean>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/springmvcPage"/>
         <property name="suffix" value=".jsp"/>

@@ -15,5 +15,11 @@
       <property name="borrowBookLimit" type="java.lang.Integer"/>
       <property name="returnEndDate" type="java.util.Date"/>
       <!--Todo BorrowBookEntity关系映射没有完成-->
+      <set name="users" cascade="save-update" table="user_borrowBookEntity">
+         <key>
+            <column name="borrowBookEntityId"/>
+         </key>
+         <many-to-many column="userId" class="com.cn.design.domain.User"/>
+      </set>
    </class>
 </hibernate-mapping>

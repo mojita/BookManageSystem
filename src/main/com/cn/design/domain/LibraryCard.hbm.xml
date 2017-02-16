@@ -10,6 +10,7 @@
       <property name="userName" type="java.lang.String"/>
       <property name="startDate" type="java.util.Date"/>
       <!--Todo LibraryCard关系映射没有完成userId还没有进行映射-->
+      <many-to-one name="user" column="userId" class="com.cn.design.domain.User" not-null="true" cascade="save-update" unique="true"/>
 
    </class>
 </hibernate-mapping>

@@ -18,6 +18,8 @@
         <property name="imageName" type="java.lang.String"/>
         <property name="importDate" type="java.util.Date"/>
         <!--Todo Book关系映射没有完成-->
+
+        <many-to-one name="classification" column="classificationId" cascade="save-update"/>
         
     </class>
 

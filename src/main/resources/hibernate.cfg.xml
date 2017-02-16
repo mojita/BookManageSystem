@@ -18,11 +18,30 @@
 
 
     <mapping resource="com/cn/design/domain/User.hbm.xml"/>
-    <mapping resource="com/cn/design/domain/Book.hbm.xml"/>
-    <mapping resource="com/cn/design/domain/BorrowBookEntity.hbm.xml"/>
-    <mapping resource="com/cn/design/domain/Classification.hbm.xml"/>
     <mapping resource="com/cn/design/domain/LibraryCard.hbm.xml"/>
-    <mapping resource="com/cn/design/domain/ReturnBookEntity.hbm.xml"/>
     <mapping resource="com/cn/design/domain/Role.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/Book.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/Classification.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/BorrowBookEntity.hbm.xml"/>
+    <mapping resource="com/cn/design/domain/ReturnBookEntity.hbm.xml"/>
+
+
+
+    <!--<mapping resource="com/cn/design/domain/User.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/Book.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/BorrowBookEntity.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/Classification.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/LibraryCard.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/ReturnBookEntity.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/Role.hbm.xml"/>-->
+
+    <!--测试多对多测试(测试成功)-->
+    <!--<mapping resource="com/cn/design/domain/domainTest/Person.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/domainTest/Address.hbm.xml"/>-->
+    <!--一对多测试-->
+    <!--<mapping resource="com/cn/design/domain/domaintest/Person.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/domaintest/Address.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/domaintest/Student.hbm.xml"/>-->
+    <!--<mapping resource="com/cn/design/domain/domaintest/School.hbm..xml"/>-->
   </session-factory>
 </hibernate-configuration>

@@ -16,6 +16,12 @@
       <property name="returnEndDate" type="java.util.Date"/>
       <property name="classificationName" type="java.lang.String"/>
       <!--Todo ReturnBookEntity关系映射没有完成,这里的用户和这个bookId还没有进行关系映射-->
+      <set name="users" cascade="save-update" table="user_returnBookEntity">
+         <key>
+            <column name="returnBookEntityId"/>
+         </key>
+         <many-to-many column="userId" class="com.cn.design.domain.User"/>
+      </set>
 
    </class>
 </hibernate-mapping>

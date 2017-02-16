@@ -1,6 +1,6 @@
 package com.cn.design.domain;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by lijunhong on 17/2/8.
@@ -11,7 +11,7 @@ public class Role {
 
     private int userType;       //0为普通用户,1为管理员用户
 
-    private List<User> users;   //用户
+    private Set<User> users;   //用户
 
     public Integer getRoleId() {
         return roleId;
@@ -29,11 +29,11 @@ public class Role {
         this.userType = userType;
     }
 
-    public List<User> getUsers() {
+    public Set<User> getUsers() {
         return users;
     }
 
-    public void setUsers(List<User> users) {
+    public void setUsers(Set<User> users) {
         this.users = users;
     }
 }

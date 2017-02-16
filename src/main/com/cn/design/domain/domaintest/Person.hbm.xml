@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.cn.design.domain.domaintest.Person" table="person">
+        <id name="pid" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property name="name" type="java.lang.String"/>
+        <property name="sex" type="java.lang.String"/>
+        <!--下面这个是单向的多对一关系-->
+        <!--<many-to-one name="address" column="addressId" not-null="true"/>-->
+        <!--下面这个是一对一的关系关联在主键上,-->
+        <many-to-one name="address" column="addressId" not-null="true" unique="true"/>
+    </class>
+</hibernate-mapping>

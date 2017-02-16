@@ -13,7 +13,7 @@ public class LibraryCard {
 
     private Date startDate;     //借书证开始时间
 
-    private Integer userId;     //用户id
+    private User user;          //用户
 
     public Integer getCardId() {
         return cardId;
@@ -39,11 +39,11 @@ public class LibraryCard {
         this.startDate = startDate;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

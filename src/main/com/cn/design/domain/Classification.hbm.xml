@@ -9,6 +9,12 @@
       </id>
       <property name="classificationName" type="java.lang.String"/>
       <!--Todo Classification关系映射没有完成-->
+      <set name="books">
+         <key>
+            <column name="classificationId"/>
+         </key>
+         <one-to-many class="com.cn.design.domain.Book"/>
+      </set>
 
    </class>
 

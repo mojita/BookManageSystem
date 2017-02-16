@@ -1,6 +1,6 @@
 package com.cn.design.domain;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by lijunhong on 17/2/8.
@@ -11,7 +11,7 @@ public class Classification {
 
     private String classificationName;      //分类型
 
-    private List<Book> books;               //书,这个是1对多的关系
+    private Set<Book> books;               //书,这个是1对多的关系
 
     public Integer getClassificationId() {
         return classificationId;
@@ -29,11 +29,11 @@ public class Classification {
         this.classificationName = classificationName;
     }
 
-    public List<Book> getBooks() {
+    public Set<Book> getBooks() {
         return books;
     }
 
-    public void setBooks(List<Book> books) {
+    public void setBooks(Set<Book> books) {
         this.books = books;
     }
 }

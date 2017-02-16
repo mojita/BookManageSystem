@@ -9,6 +9,11 @@
         </id>
         <property name="userType" type="java.lang.Integer"/>
         <!--Todo Role关系映射没有完成,这里的user没有进行映射-->
-
+        <set name="users" cascade="save-update">
+            <key>
+                <column name="roleId"/>
+            </key>
+            <one-to-many class="com.cn.design.domain.User"/>
+        </set>
     </class>
 </hibernate-mapping>

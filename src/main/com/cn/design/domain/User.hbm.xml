@@ -17,6 +17,21 @@
         <property name="imagePath" type="java.lang.String"/>
 
         <!--TODO 后面的关系映射还没有完成-->
+        <many-to-one name="role" column="roleId" class="com.cn.design.domain.Role" cascade="save-update"/>
+        <set name="borrowBookEntities" cascade="save-update" table="user_borrowBookEntity">
+            <key>
+                <column name="userId"/>
+            </key>
+            <many-to-many column="borrowBookEntityId" class="com.cn.design.domain.BorrowBookEntity"/>
+        </set>
+
+        <set name="returnBookEntities" cascade="save-update" table="user_returnBookEntity">
+            <key>
+                <column name="userId"/>
+            </key>
+            <many-to-many column="returnBookEntityId" class="com.cn.design.domain.ReturnBookEntity"/>
+        </set>
+
 
      </class>
 </hibernate-mapping>
